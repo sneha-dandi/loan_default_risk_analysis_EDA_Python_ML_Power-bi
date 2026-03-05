@@ -370,7 +370,9 @@ Savings: **$575M annually**
 Data Analyst | Credit Risk Analytics | Machine Learning
 
 📧 Email: snehadandi20@gmail.com
+
 🔗 LinkedIn:https://www.linkedin.com/in/sneha-dandi-829257377/
+
 💻 GitHub: https://github.com/sneha-dandi
 
 ---
