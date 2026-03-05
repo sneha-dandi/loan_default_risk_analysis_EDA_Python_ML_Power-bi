@@ -59,10 +59,32 @@ Banks face significant credit risk when borrowers fail to repay loans.
 
 # 📁 Dataset
 
+
+
+Due to GitHub file size limitations, the dataset is not included directly in this repository.
+
+You can download the datasets from the links below:
+
+🔗 **Raw Dataset:**  
+https://drive.google.com/file/d/131eZMeUuPKoliZDF5dgR7UIp1DqDhTpm/view?usp=sharing
+
+🔗 **Cleaned Dataset:**  
+https://drive.google.com/file/d/1deOs-prykrXs6U0QPfwrc_pv8cDKcLyh/view?usp=sharing
+
+After downloading, place the files inside the `data/` folder:
+
+data/
+├── Loan_Default.csv
+
+  └── Loan_Default_CLEANED.csv
+
+Original dataset source: Kaggle (Loan Default Prediction Dataset)
+
 **Source:** Historical bank loan records  
 **Size:** 148,670 loans  
 **Features:** 34 variables
 
+## 📁 Dataset
 ### Borrower Information
 - `income` – Monthly earnings  
 - `Credit_Score` – FICO score (300–850)  
@@ -109,30 +131,48 @@ Solution: **Group-based imputation + outlier removal**
 loan-default-risk-analysis/
 │
 ├── README.md
-├── .gitignore
-├── requirements.txt
+
+
 ├── Loan_Default_Analysis_Report.pdf
+
+
 │
+
 ├── notebooks/
-│ ├── data_cleaning.ipynb
-│ ├── eda_analysis.ipynb
-│ └── ml_model.ipynb
+
+
+│ ├── eda_python.ipynb
+
+│ └── loan default_ml_model.ipynb
+
+
 │
+
 ├── data/
+
 │ ├── Loan_Default.csv
+
 │ └── Loan_Default_CLEANED.csv
+
+
+
+
 │
-├── models/
-│ ├── random_forest_model.pkl
-│ └── label_encoders.pkl
-│
+
 ├── images/
-│ ├── income_default_chart.png
-│ ├── loan_type_analysis.png
-│ └── regional_risk_heatmap.png
+
+│ ├── overview_1.jpg
+
+│ ├── risk_analysis_2nd.jpg
+
+│ └── segmentation_3rd.jpg
+
+
 │
+
 └── dashboard/
-└── loan_default_dashboard.pbix
+
+└── bank_loan_default_analysis_report.pbix
 
 ---
 
@@ -180,7 +220,7 @@ Final Dataset: **128,345 clean records**
 
 ### Multivariate Insights
 
-- Worst combination: **Central + Type2 = 41% default**
+- Worst combination: **Nort-east + Type2 = 41% default**
 - Best combination: **North + Type1 = 21% default**
 - Risk factors **multiply rather than add**
 
@@ -189,7 +229,7 @@ Final Dataset: **128,345 clean records**
 # ❓ Research Questions & Key Findings
 
 ### 1️⃣ What is the current default rate?
-**Finding:** 18.5% after cleaning  
+**Finding:** 18.49% after cleaning  
 Estimated **$7.16B at risk**
 
 ---
@@ -357,7 +397,7 @@ Savings: **$575M annually**
 
 | Metric | Current | Target |
 |------|------|------|
-| Default Rate | 18.5% | 13–14% |
+| Default Rate | 18.49% | 13–14% |
 | Capital at Risk | $7.16B | $5B |
 | Processing Time | 2–3 days | 30 sec |
 
